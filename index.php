@@ -2,20 +2,24 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>harjutus-4 - Andmetüübid (2)</title>
+  <title>harjutus-6 - Tingimuslaused</title>
 </head>
 
 <body>
 	<h2>Tingimuslaused</h2>
+		<?php
+			$a =4;
+			$b =5;
+		?>
 		
 		<?php
-			if (a = 4) {
-			echo "4 ja 4 on ühesugused numbrid";
-			}
-		?>
-		<?php
-			if (b = 5) {
-			echo "4 ja 4 on ühesugused numbrid";
+			if ($a < $b) {
+				echo "{$a} on väiksem kui {$b}";
+			} elseif ($a = $b) {
+			
+				echo "{$a} on {$b}";
+			} elseif ($a > $b) {
+				echo "{$a} on suurem kui {$b}";       
 			}
 		?>
 		
