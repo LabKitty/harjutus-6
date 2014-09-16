@@ -25,7 +25,7 @@
 		
 	<h2>Süntaks</h2>
 		<?php
-			$age = 24;
+			$age = 14;
 			$age_limit = 18;
 		?>
 		<?php
@@ -39,6 +39,21 @@
 			} elseif ($age > $age_limit ) {
 			echo "Olete piisavalt vana. Tulge edasi!"; 
 			} 
+		?>
+	<h2>Mitme loogilise tehte võrdlemine</h2>	
+		<?php
+			$a = 3;
+			$b = 3;
+			$c = 4;
+			$d = 5;
+		?>
+		
+		<?php
+			if (($a == $b) && ($d > $c)) {
+			echo " JA ";
+			} elseif (($a == $b) || ($d > $c)){
+			echo "VÕI";
+			}
 		?>
 </body>
 </html>
